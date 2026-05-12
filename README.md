@@ -24,9 +24,8 @@ The columns in the data contains:
 Upon loading the dataset into Microsoft Power BI via Power Query, an initial data quality assessment was conducted. The dataset was found to be clean with no missing values, no duplicate records, no outliers and no errors across all 350 rows and 16 columns. 
 
 Data types were verified and confirmed as follows:
-* Numeric columns (Age, Baseline_Systolic_BP, Baseline_Diastolic_BP, Followup_Systolic_BP, Followup_Diastolic_BP, Number_of_Visits) were correctly assigned as whole numbers or decimals.
-* Categorical columns (Gender, Diabetes_Mellitus, Chronic_Kidney_Disease, Dyslipidemia, Obesity, BP_Controlled_After_3_Months) were confirmed as text with Yes/No values.
-* Ordinal categorical column (Medication_Adherence) was confirmed as text with three distinct values: Good, Moderate, and Poor.
+* Numeric columns: Age, Baseline_Systolic_BP, Baseline_Diastolic_BP, Followup_Systolic_BP, Followup_Diastolic_BP, Number_of_Visits
+* Categorical columns: Gender, Diabetes_Mellitus, Chronic_Kidney_Disease, Dyslipidemia, Obesity, BP_Controlled_After_3_Months, Medication Adherence 
 * Date column (Registration_Date) was correctly formatted as a date field.
 
 ### Feature Engineering
