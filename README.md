@@ -60,7 +60,9 @@ These metrics were then segmented across multiple dimensions to address the key 
 The dataset was analyzed and visualized using PowerBI.
 
 ## Dashboard Overview 
-
+![Overview Page](Overview.jpg)
+![BP Failure Analysis](BP_failure.jpg)
+![Drug Performance Analysis](BP_control.jpg)
 
 
 
