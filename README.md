@@ -61,8 +61,78 @@ The dataset was analyzed and visualized using PowerBI.
 
 ## Dashboard Overview 
 ![Overview Page](Overview.jpg)
+
+
 ![BP Failure Analysis](BP_failure.jpg)
-![Drug Performance Analysis](BP_control.jpg)
+
+
+![Drug Performance Analysis](BP_Control.jpg)
+
+
+## Key Insights
+### Overall Failure Rate
+The most striking finding in this dataset is the scale of BP control failure. Of 350 patients, 317 (90.57%) failed to achieve controlled blood pressure within 3 months of treatment initiation. Only 33 patients (9.43%) achieved BP control.
+
+| Predictor | Implication |
+|----------|-------------|
+| Medication Adherence | Poor adherence patients failed at 98.23% — the strongest single predictor identified. Even good adherence only reduced failure to 84.76%, confirming adherence as a critical risk factor at every level. |
+| Chronic Kidney Disease | CKD patients had the highest failure rate among all comorbidity groups (92.86%), exceeding the overall average. This suggests CKD is the most impactful comorbidity on treatment outcomes. |
+| Baseline severity | Patients in Hypertensive Crisis show a 100% failure rate, compared to 87% in Stage 2 Hypertension. This suggests that the higher the initial BP, the lower the likelihood of achieving control. |
+| ACE Inhibitors Drug class | ACE inhibitors show the highest failure (100%), followed by Calcium Channel Blockers (94.8%) and ARBs (94.1%). Combination therapy (79%) has the lowest failure rate. This indicates monotherapy is less effective in this high-risk population, while combining agents improves control. |
+
+### High-Risk Patient Profile
+Based on the analysis, a patient presenting with the following characteristics at point of prescription should be flagged as HIGH RISK for BP control failure:
+* Poor medication adherence history
+* Chronic Kidney Disease present
+* Patients in Hypertensive Crisis
+
+From the analysis, age, gender and number of visits did not show a clear or consistent relationship with BP control failure. Failure rates remained relatively similar across age groups and visit frequencies, indicating no distinct pattern or gradient.
+As a result, these variables were not identified as key predictors of BP control failure in this dataset, compared to stronger factors indicated earlier.
+
+### Drug Class Performance by Comorbidity Profile
+
+Across all 350 patients, Combination Therapy delivered the highest BP control rate at 21.05%, followed by Thiazide Diuretic at 13.11%. ACE Inhibitors recorded 0% success - the lowest performing drug class across the entire dataset.
+*Critical Observation: Combination Therapy Underutilization*
+Despite delivering the highest overall success rate (21.05%) and leading in 3 of 4 comorbidity groups, Combination Therapy was prescribed to only 57 patients - fewer than ARB (68), Beta Blocker (61), and Thiazide Diuretic (61). The best-performing drug is being underutilized in favor of less effective single-drug alternatives.
+
+*Critical Observation: ACE Inhibitor Performance*
+ACE Inhibitors recorded 0% success across all four comorbidity groups - Diabetes, CKD, Obesity, and Dyslipidemia - with 45 patients prescribed this drug class. This is the most consistent finding in the dataset and warrants urgent clinical review.
+
+## Recommendations 
+* Introduce structured medication adherence programs for newly diagnosed hypertension patients. With poor adherence linked to a 98.23% failure rate, it represents the most significant predictor of poor outcomes. Recommended measures include adherence risk screening at prescription, routine follow-up calls, medication reminders, and targeted patient education.
+* Implement a standardized system to identify high-risk patients. Individuals with CKD, a history of poor adherence, and baseline systolic BP ≥180 mmHg should be automatically flagged for closer monitoring, more frequent visits, and immediate adherence-focused interventions.
+* Adopt combination therapy as a first-line approach for patients with diabetes, dyslipidemia, or obesity. It consistently outperforms single-drug treatments, yet remains underutilized despite delivering the best outcomes.
+* Give preference to thiazide diuretics for patients with CKD. In this subgroup, they achieved a 17.65% success rate, outperforming combination therapy (11.54%), suggesting CKD-specific prescribing guidelines should be adjusted accordingly.
+* Perform an immediate clinical review of ACE inhibitor use. With a 0% success rate across all comorbidity groups (45 patients), a formal audit is needed to determine whether this class should remain part of the standard treatment approach for these patients.
+* Initiate more aggressive treatment strategies for patients presenting with hypertensive crisis (SBP >180 mmHg). Given the 100% failure rate under standard protocols, early use of combination therapy should be considered instead of delaying escalation until after treatment failure.
+
+## Limitations
+This analysis provides valuable insights into blood pressure control and treatment effectiveness; however, several limitations should be acknowledged. These limitations may affect the interpretation, generalizability, and overall robustness of the findings:
+* Limited sample size
+* Simplified comorbidity structure: Comorbid conditions are recorded in a binary format (Yes/No) without any severity grading. This means patients with mild disease and those with advanced or severe disease are treated equally in the analysis,limiting the clinical depth of interpretation.
+* Absence of lifestyle and socioeconomic variables
+* Observational study design limitations: The dataset is observational rather than experimental, so the results reflect associations rather than causal relationships. Therefore, we cannot conclude that any specific treatment directly caused improved or worsened blood pressure outcomes.
+
+## Conclusion
+This analysis of 350 hypertensive patients reveals a systemic BP control challenge that cannot be attributed to a 
+single factor. The 90.57% failure rate reflects a convergence of clinical complexity, suboptimal prescribing 
+patterns, and inadequate adherence support.
+The two most actionable findings are:
+* medication adherence is the single strongest modifiable predictor of failure
+* Combination Therapy consistently outperforms single-drug alternatives across most comorbidity 
+profiles yet remains underutilized.
+
+Addressing these two factors alone through structured adherence programs and evidence-based drug selection 
+has the greatest potential to meaningfully improve BP control rates in this patient population.
+The recommendations in this report are grounded in the data and designed to be clinically actionable. 
+Implementation should prioritize the highest-risk patients first, with systematic scale-up across the broader 
+patient population
+
+
+
+
+
+
 
 
 
