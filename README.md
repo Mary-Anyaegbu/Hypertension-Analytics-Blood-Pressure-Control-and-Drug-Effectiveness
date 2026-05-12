@@ -54,7 +54,7 @@ Key metrics were derived using DAX functions, including:
 * BP control success rate
 * Total patient count
 * Average baseline systolic BP
-* Average follow-up systolic BP. 
+* Average follow-up systolic BP
 These metrics were then segmented across multiple dimensions to address the key business questions.
 The dataset was analyzed and visualized using PowerBI.
 
